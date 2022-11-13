@@ -1,5 +1,5 @@
 # import chess
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 app.debug = True
@@ -12,3 +12,10 @@ def index(name=None):
 @app.route("/img/chesspieces/wikipedia/<piece>.png")
 def rcp(piece):
     return app.url_for('static', filename=f'/img/chesspieces/wikipedia/{piece}.png')
+
+
+@app.route('/write_pos_to_flask', methods=['POST'])
+def get_post_board_pos():
+    board_pos = request.form['nPos']
+    print(board_pos)
+    return board_pos
