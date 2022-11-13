@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="jquery-3.4.1.min.js"></script>
+        <title>Test</title>
+        <link rel="stylesheet" type="text/css" href="css/chessboard-1.0.0.css">
+        <script src="js/chessboard-1.0.0.js"></script>
+        
+    </head>
+    <body>
+
+  <div id="myBoard" style="width: 800px; height: 800px;"></div>
+  <script> 
+
+var config = {
+  draggable: true,
+  dropOffBoard: 'trash',
+  position: 'start'}
+
+var board = Chessboard('myBoard', config)
+
+</script> 
+</body>
+</html>
