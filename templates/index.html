@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <script src="jquery-3.4.1.min.js"></script>
+        <title>Test</title>
+        <link rel="stylesheet" type="text/css" href="css/chessboard-1.0.0.css">
+        <script src="js/chessboard-1.0.0.js"></script> -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <!-- <script>window.jQuery || document.write('<script src="{{
+          url_for('static', filename='jquery-3.4.1.min.js') }}">\x3C/script>')</script> -->
+
+
+        <script src="{{ url_for('static', filename='jquery-3.4.1.min.js') }}"></script>
+        <title>Test</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='chessboard-1.0.0.css') }}">
+        <script src="{{ url_for('static', filename='js/chessboard-1.0.0.js') }}"></script>
+    </head>
+    <body>
+
+  <div id="myBoard" style="width: 800px; height: 800px;"></div>
+  <script> 
+
+var config = {
+  draggable: true,
+  dropOffBoard: 'trash',
+  position: 'start'}
+
+var board = Chessboard('myBoard', config)
+
+</script> 
+</body>
+</html>
