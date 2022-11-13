@@ -1,0 +1,14 @@
+Get board pos to send to flask server, 
+	Js now talking to Py
+	
+Get Flask server to respond!
+	1. get py/flask to read the pos
+	2. get py to interpret the fen string, if the move was illegal
+
+make for richer conversation
+	3. get JS to listen for if the move was valid
+	4. if move is not valid send msg,
+		4.1 return board back to previous (legal) state
+
+	
+
