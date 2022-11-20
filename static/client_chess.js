@@ -1,4 +1,4 @@
-// import { Chess } from 'chess.js'
+// import {Chess} from "./chess.js/dist/chess.js"
 
 // const chess = new Chess()
 
@@ -6,9 +6,9 @@
 //   const moves = chess.moves()
 //   const move = move[0]
 //   chess.move(move)
+//   console.log(chess.pgn())
 // }
 
-// console.log(chess.pgn())
 
 
 
@@ -16,7 +16,7 @@ var config = {
   draggable: true,
   position: 'start',
   // onChange: onChange,
-  onDrop: onDrop
+  // onDrop: onDrop
   }
 
 Document.getElem
